@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <Button android:id="@+id/reset" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"      
+            android:layout_alignParentBottom="true"
+            android:text="Reset" />
+          
+    <Button android:id="@+id/goal"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/reset"
+            android:layout_alignTop="@id/reset"
+            android:text="Goal" />  
+            
+    <Button android:id="@+id/learn"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/goal"
+            android:layout_alignTop="@id/goal"
+            android:text="learn" />
+            
+    <Button android:id="@+id/fast"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/learn"
+            android:layout_alignTop="@id/learn"
+            android:text="Fast" />
+            
+    <Button android:id="@+id/slow"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fast"
+            android:layout_alignTop="@id/fast"
+            android:text="Slow" />
+            
+    <Button android:id="@+id/step"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/slow"
+            android:layout_alignTop="@id/slow"
+            android:text="Step" />
+    <lining.apps.andriod.slidingpuzzle.MyView 
+            android:id="@+id/blocks" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content"
+            android:layout_above="@id/reset" />       
+
+
+</RelativeLayout>
